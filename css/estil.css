@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding-top: 2vh;
+}
+
+#volGeneral {
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#sliderVol {
+    width: 20%;
+}
+
+#botons {
+    display: grid;
+    width: 60%;
+    height: 60vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.7fr 0.7fr 0.7fr;
+    grid-template-areas: 
+        "b1 b2 b3 b4"
+        "b5 b6 b7 b8"
+        "b9 b10 b11 b12";
+    column-gap: 1%;
+    grid-row-gap: 1%;
+    padding-top: 2vh;
+}
+
+.boto {
+    padding: 5% 0 5% 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drum {
+    border: solid 1px yellow;
+    color: yellow;
+}
+
+.bass {
+    border: solid 1px red;
+    color: red;
+}
+
+.guitar {
+    border: solid 1px green;
+    color: green;
+}
+
+.bell {
+    border: solid 1px blue;
+    color: blue;
+}
+
+.velocitat {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vol {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.controls {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+/*    padding-top: 1vh;*/
+}
+
+p {
+    padding: 1vh 0 1vh 0;
+}
+
+.imgLoop {
+    padding-top: 1vh;
+    width: 4vh; 
+    align-self: center;
+}
+
+#video {
+    height: 30vh;
+}
+
+#imgLoop0 {
+/*    padding: 2vh 0vw 0vh 0vw;*/
+    width: 4vh; 
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  opacity: 1;
+  width: 80%;
+  height: 0.4vh;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15%;
+  height: 0.4vh;
+  background: coral;
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 15%;
+  height: 0.4vh;
+  background: coral;
+  cursor: pointer;
+}

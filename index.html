@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sampler</title>
+    <link rel="stylesheet" href="css/estil.css">
+</head>
+
+<body>
+    
+    <video id="video" loop>
+            <source src="media/Veil.mp4" type="video/mp4">
+        </video>
+    
+    <div id="volGeneral">
+        <p>Volum General</p>
+        <input type="range" min="0" max="1" step="0.001" value="1" class="slider" id="sliderVol">
+    </div>
+    
+    <div id="botons">
+        
+        <div id="b1">
+            <div id="b1boto" class="boto drum">
+                <audio id="drum1">
+                    <source src="media/1drum1.wav" type="audio/wav">
+                </audio>Drum 1
+            </div>
+            <div id="b1controls" class="controls">
+                <div class="vol">
+                    <p>Volum</p>
+                    <input type="range" min="0" max="1" step="0.001" id="sliderVol1" class="slider">
+                </div>                
+                <div class="velocitat">
+                    <p>Velocitat</p>
+                    <input type="range" min="0.5" max="1.5" step="0.001" value="1" id="sliderVe1" class="slider">
+                </div>
+                <img id="imgLoop1" class="imgLoop" src="media/noLoop.svg">
+            </div>
+        </div>
+            
+        <div id="b2" >
+            <div id="b2boto" class="boto bass">
+                <audio id="bass1">
+                    <source src="media/2bass1.wav" type="audio/wav">
+                </audio>Bass 1
+            </div>
+            <div id="b2controls" class="controls">
+                <div class="vol">
+                    <p>Volum</p>
+                    <input type="range" min="0" max="1" step="0.001" id="sliderVol2" class="slider">
+                </div>
+                <div class="velocitat">
+                    <p>Velocitat</p>
+                    <input type="range" min="0.5" max="1.5" step="0.001" value="1" id="sliderVe2" class="slider">
+                </div>
+                <img id="imgLoop2" class="imgLoop" src="media/noLoop.svg">
+            </div>
+        </div>
+        
+        <div id="b3">
+            <div id="b3boto" class="boto guitar">
+                <audio id="guitar1">
+                    <source src="media/3guitar1.wav" type="audio/wav">
+                </audio>Guitar 1
+            </div>
+            <div id="b3controls" class="controls">
+                <div class="vol">
+                    <p>Volum</p>
+                    <input type="range" min="0" max="1" step="0.001" id="sliderVol3" class="slider">
+                </div>
+                <div class="velocitat">
+                    <p>Velocitat</p>
+                    <input type="range" min="0.5" max="1.5" step="0.001" value="1" id="sliderVe3" class="slider">
+                </div>
+                <img id="imgLoop3" class="imgLoop" src="media/noLoop.svg">
+            </div>
+        </div>
+        
+        <div id="b4">
+            <div id="b4boto" class="boto bell">
+                <audio id="bell1">
+                    <source src="media/4bell1.wav" type="audio/wav">
+                </audio>Bell 1
+            </div>
+            <div id="b4controls" class="controls">
+                <div class="vol">
+                    <p>Volum</p>
+                    <input type="range" min="0" max="1" step="0.001" id="sliderVol4" class="slider">
+                </div>
+                <div class="velocitat">
+                    <p>Velocitat</p>
+                    <input type="range" min="0.5" max="1.5" step="0.001" value="1" id="sliderVe4" class="slider">
+                </div>
+                <img id="imgLoop4" class="imgLoop" src="media/noLoop.svg">
+            </div>
+        </div>
+        
+        <div id="b5">
+            <div id="b5boto" class="boto drum">
+                <audio id="drum2">
+                    <source src="media/5drum2.wav" type="audio/wav">
+                </audio>Drum 2
+            </div>
+            <div id="b5controls" class="controls">
+                <div class="vol">
+                    <p>Volum</p>
+                    <input type="range" min="0" max="1" step="0.001" id="sliderVol5" class="slider">
+                </div>
+                <div class="velocitat">
+                    <p>Velocitat</p>
+                    <input type="range" min="0.5" max="1.5" step="0.001" value="1" id="sliderVe5" class="slider">
+                </div>
+                <img id="imgLoop5" class="imgLoop" src="media/noLoop.svg">
+            </div>
+        </div>
+        
+        <div id="b6">
+            <div id="b6boto" class="boto bass">
+                <audio id="bass2">
+                    <source src="media/6bass2.wav" type="audio/wav">
+                </audio>Bass 2
+            </div>
+            <div id="b6controls" class="controls">
+                <div class="vol">
+                    <p>Volum</p>
+                    <input type="range" min="0" max="1" step="0.001" id="sliderVol6" class="slider">
+                </div>
+                <div class="velocitat">
+                    <p>Velocitat</p>
+                    <input type="range" min="0.5" max="1.5" step="0.001" value="1" id="sliderVe6" class="slider">
+                </div>
+                <img id="imgLoop6" class="imgLoop" src="media/noLoop.svg">
+            </div>
+        </div>
+            
+        <div id="b7">
+            <div id="b7boto" class="boto guitar">
+                <audio id="guitar2">
+                    <source src="media/7guitar2.wav" type="audio/wav">
+                </audio>Guitar 2
+            </div>
+            <div id="b7controls" class="controls">
+                <div class="vol">
+                    <p>Volum</p>
+                    <input type="range" min="0" max="1" step="0.001" id="sliderVol7" class="slider">
+                </div>
+                <div class="velocitat">
+                    <p>Velocitat</p>
+                    <input type="range" min="0.5" max="1.5" step="0.001" value="1" id="sliderVe7" class="slider">
+                </div>
+                <img id="imgLoop7" class="imgLoop" src="media/noLoop.svg">
+            </div>
+        </div>
+            
+        <div id="b8">
+            <div id="b8boto" class="boto bell">
+                <audio id="bell2">
+                    <source src="media/8bell2.wav" type="audio/wav">
+                </audio>Bell 2
+            </div>
+            <div id="b8controls" class="controls">
+                <div class="vol">
+                    <p>Volum</p>
+                    <input type="range" min="0" max="1" step="0.001" id="sliderVol8" class="slider">
+                </div>
+                <div class="velocitat">
+                    <p>Velocitat</p>
+                    <input type="range" min="0.5" max="1.5" step="0.001" value="1" id="sliderVe8" class="slider">
+                </div>
+                <img id="imgLoop8" class="imgLoop" src="media/noLoop.svg">
+            </div>
+        </div>
+        
+        <div id="b9">
+            <div id="b9boto" class="boto drum">
+                <audio id="drum3">
+                    <source src="media/9drum3.wav" type="audio/wav">
+                </audio>Drum 3
+            </div>
+            <div id="b9controls" class="controls">
+                <div class="vol">
+                    <p>Volum</p>
+                    <input type="range" min="0" max="1" step="0.001" id="sliderVol9" class="slider">
+                </div>
+                <div class="velocitat">
+                    <p>Velocitat</p>
+                    <input type="range" min="0.5" max="1.5" step="0.001" value="1" id="sliderVe9" class="slider">
+                </div>
+                <img id="imgLoop9" class="imgLoop" src="media/noLoop.svg">
+            </div>
+        </div>
+        
+        <div id="b10">
+            <div id="b10boto" class="boto bass">
+                <audio id="bass3">
+                    <source src="media/10bass3.wav" type="audio/wav">
+                </audio>Bass 3
+            </div>
+            <div id="b10controls" class="controls">
+                <div class="vol">
+                    <p>Volum</p>
+                    <input type="range" min="0" max="1" step="0.001" id="sliderVol10" class="slider">
+                </div>
+                <div class="velocitat">
+                    <p>Velocitat</p>
+                    <input type="range" min="0.5" max="1.5" step="0.001" value="1" id="sliderVe10" class="slider">
+                </div>
+                <img id="imgLoop10" class="imgLoop" src="media/noLoop.svg">
+            </div>
+        </div>
+        
+        <div id="b11">
+            <div id="b11boto" class="boto guitar">
+                <audio id="guitar3">
+                    <source src="media/11guitar3.wav" type="audio/wav">
+                </audio>Guitar 3
+            </div>
+            <div id="b11controls" class="controls">
+                <div class="vol">
+                    <p>Volum</p>
+                    <input type="range" min="0" max="1" step="0.001" id="sliderVol11" class="slider">
+                </div>
+                <div class="velocitat">
+                    <p>Velocitat</p>
+                    <input type="range" min="0.5" max="1.5" step="0.001" value="1" id="sliderVe11" class="slider">
+                </div>
+                <img id="imgLoop11" class="imgLoop" src="media/noLoop.svg">
+            </div>
+        </div>
+        
+        <div id="b12">
+            <div id="b12boto" class="boto bell">
+                <audio id="bell3">
+                    <source src="media/12bell3.wav" type="audio/wav">
+                </audio>Bell 3
+            </div>
+            <div id="b12controls" class="controls">
+                <div class="vol">
+                    <p>Volum</p>
+                    <input type="range" min="0" max="1" step="0.001" id="sliderVol12" class="slider">
+                </div>
+                <div class="velocitat">
+                    <p>Velocitat</p>
+                    <input type="range" min="0.5" max="1.5" step="0.001" value="1" id="sliderVe12" class="slider">
+                </div>
+                <img id="imgLoop12" class="imgLoop" src="media/noLoop.svg">
+            </div>
+        </div>
+    
+    </div>
+    
+    <script src="js/codi.js"></script>
+</body>
+</html>
